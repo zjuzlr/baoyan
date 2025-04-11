@@ -27,7 +27,7 @@ user = get_current_user()
 st.sidebar.success(f"已登录：{user['email']}")
 if st.sidebar.button("退出登录"):
     logout_user()
-    st.experimental_rerun()
+    st.rerun()
 
 st.title("🚀 保研坞 · 小卫星计划")
 
